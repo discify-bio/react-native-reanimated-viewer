@@ -1,5 +1,5 @@
 {
-  "name": "react-native-reanimated-viewer",
+  "name": "discify-bio-react-native-reanimated-viewer",
   "version": "1.6.0",
   "description": "A high performance image viewer in react-native used by react-native-reanimated",
   "main": "dist/esm/index.js",

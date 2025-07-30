@@ -572,12 +572,12 @@ const ImageViewer = forwardRef<ImageViewerRef, ImageViewerProps>((props, ref) =>
     }
     return { flag, currentWidthRange, currentHeightRange };
   }, [
-    activeIndex.value,
+    activeIndex,
     data,
-    imageSize.value,
+    imageSize,
     imageX,
     imageY,
-    savedImageScale.value,
+    savedImageScale,
     savedImageX,
     savedImageY,
     screenDimensions.height,
@@ -643,7 +643,7 @@ const ImageViewer = forwardRef<ImageViewerRef, ImageViewerProps>((props, ref) =>
             );
           }
         }),
-    [formatImagePosition, imageX, imageY, savedImageScale.value, savedImageX, savedImageY],
+    [formatImagePosition, imageX, imageY, savedImageScale, savedImageX, savedImageY],
   );
   const resetScale = useCallback(() => {
     'worklet';
